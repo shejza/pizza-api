@@ -12,4 +12,8 @@ class Pizza extends Model
         'description',
         'price'
     ];
+
+    
 }
+
+

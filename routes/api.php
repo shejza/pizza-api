@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 $router->get('pizzas', ['uses' => 'PizzasController@get']);
+$router->post('pizzas', ['uses' => 'PizzasController@update']);
+$router->get('order-details', ['uses' => 'OrderDetailsController@get']);
  

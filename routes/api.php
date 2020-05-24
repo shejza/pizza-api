@@ -21,4 +21,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 $router->get('pizzas', ['uses' => 'PizzasController@get']);
 $router->post('pizzas', ['uses' => 'PizzasController@update']);
 $router->get('order-details', ['uses' => 'OrderDetailsController@get']);
+$router->post('order-details', ['uses' => 'OrderDetailsController@update']);
+$router->delete('order-details/{id}', ['uses' => 'OrderDetailsController@delete']);
+
+$router->post('orders', ['uses' => 'OrdersController@create']);
  

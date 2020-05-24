@@ -9,7 +9,7 @@ class OrderDetail extends Model
     protected $table = 'orderdetails';
     protected $fillable = [
         'quantity',
-        'price',
+        'price_order',
         'pizza_id',
         'order_id',
         'payment_id'
